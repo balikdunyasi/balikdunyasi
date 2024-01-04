@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Ekran genişliği 600 pikselden küçükse */
+        @media only screen and (max-width: 600px) {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        /* Ekran genişliği 601 piksel ile 900 piksel arasındaysa */
+        @media only screen and (min-width: 601px) and (max-width: 900px) {
+            img {
+                max-width: 80%;
+            }
+        }
+
+        /* Ekran genişliği 901 piksel ile 1200 piksel arasındaysa */
+        @media only screen and (min-width: 901px) and (max-width: 1200px) {
+            img {
+                max-width: 60%;
+            }
+        }
+
+        /* Ekran genişliği 1201 pikselden büyükse */
+        @media only screen and (min-width: 1201px) {
+            img {
+                max-width: 50%;
+            }
+        }
+    </style>
+    <title>Responsive Image Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <img src="1.png" alt="Image 1">
+        <img src="2.png" alt="Image 2">
+        <img src="3.png" alt="Image 3">
+        <img src="4.png" alt="Image 4">
+        <img src="5.png" alt="Image 5">
+        <img src="6.png" alt="Image 6">
+    </div>
+</body>
+</html>
